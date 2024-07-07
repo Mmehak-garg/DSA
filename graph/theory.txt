@@ -1,0 +1,36 @@
+A tree is a special type of graph in which we can reach any node from any other node
+using some path that is unique, unlike the graphs where this condition may or may not
+hold.
+
+A tree is an undirected connected graph with N vertices and exactly N-1 edges.
+
+A tree does not have any cycles in it, while a graph may have cycles.
+
+A loop is an edge that connects a vertex to itself
+
+In a complete graph (where each node is connected to every other node by a direct edge), there are NC2 number of edges means (N * (N-1)) / 2 edges
+
+A digraph or directed graph is said to be strongly connected if and only if there exists a path between every pair of nodes in the graph.
+
+The adjacency matrix of an undirected graph is symmetric.
+
+The memory use of an adjacency matrix for n nodes is O(n^2), where n is the number of nodes in the graph.
+
+BFS uses a queue as an auxiliary data structure to store nodes for further processing, the DFS scheme uses a stack. 
+both these algorithms make use of a bool variable VISITED
+
+Applications of Depth-First Search Algorithm->Finding whether a graph is connected or not,Finding whether a graph is connected or not
+
+Applications of Breadth-First Search algorithm
+
+● Finding all connected components in a graph G.
+● Finding all nodes within an individual connected component
+● Finding the shortest path between two nodes, u and v, of an unweighted graph.
+(The shortest path is in terms of the minimum number of moves required to visit
+v from u or vice-versa).
+
+For getting the number of connected components in a graph, the number of
+times we need to call DFS/BFS traversal for the graph on an unvisited vertex gives the number of connected components in the graph.
+
+A bipartite graph is a graph which can be coloured using 2 colours such that no adjacent nodes have the same colour.
+
